@@ -37,6 +37,7 @@ public class JlasniBot extends TelegramLongPollingBot {
 		
 		SendMessage msg=null;
 		if(arg0.getMessage().isCommand())
+			
 			msg = createMessage(JlasniCommand(arg0.getMessage().getText()), arg0.getMessage().getChatId());
 		else
 			msg= createMessage("Error, no es un comando", arg0.getMessage().getChatId());
@@ -58,8 +59,9 @@ public class JlasniBot extends TelegramLongPollingBot {
 	}
 	
 	private String JlasniCommand(String command){
+		String strcommand = command.replace("@"+getBotUsername(), "");
 		String msg = null;
-		switch(command){
+		switch(strcommand){
 			
 		case "/botonaco":
 			msg = jlasni.botonaco();
