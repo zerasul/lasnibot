@@ -1,4 +1,4 @@
-package jlasnitelegrambot;
+package es.jlasni.jlasnitelegrambot;
 
 import java.io.IOException;
 import java.io.InputStream;
