@@ -46,7 +46,7 @@
 		</plugins>
 		<resources>
 			<resource>
-				<directory>${base.dir}/src/main/resources</directory>
+				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
 	</build>
